@@ -88,6 +88,10 @@ type NotificationRequest struct {
 	ADMGroup               string            `json:"adm_group,omitempty"`
 	ADMGroupMessage        interface{}       `json:"adm_group_message,omitempty"`
 	Filters                interface{}       `json:"filters,omitempty"`
+	EmailSubject           string            `json:"email_subject,omitempty"`
+	EmailBody              string            `json:"email_body,omitempty"`
+	EmailFromName          string            `json:"email_from_name,omitempty"`
+	EmailFromAddress       string            `json:"email_from_address,omitempty"`
 }
 
 // NotificationCreateResponse wraps the standard http.Response for the
