@@ -7,13 +7,13 @@ Also check my [onesignal-ruby](https://github.com/tbalthazar/onesignal-ruby) gem
 ## Installation
 
 ```
-go get github.com/tbalthazar/onesignal-go
+go get github.com/mariospas/onesignal-go
 ```
 
 ## Usage
 
 ```go
-import "github.com/tbalthazar/onesignal-go"
+import "github.com/mariospas/onesignal-go"
 ```
 
 ## Documentation

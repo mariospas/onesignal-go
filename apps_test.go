@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/tbalthazar/onesignal-go/testhelper"
+	"github.com/mariospas/onesignal-go/testhelper"
 )
 
 var t = time.Date(2014, time.April, 1, 4, 20, 2, 3000000, time.UTC)

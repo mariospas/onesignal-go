@@ -92,6 +92,14 @@ type NotificationRequest struct {
 	EmailBody              string            `json:"email_body,omitempty"`
 	EmailFromName          string            `json:"email_from_name,omitempty"`
 	EmailFromAddress       string            `json:"email_from_address,omitempty"`
+	// Recommended for Sending Emails - Target specific email addresses. If an email does not correspond to an existing user, a new user will be created. Example: nick@catfac.ts Limit of 2,000 entries per REST API call
+	IncludeEmailTokens []string `json:"include_email_tokens,omitempty"`
+	// Recommended for Sending SMS - Target specific phone numbers. The phone number should be in the E.164 format. Phone number should be an existing subscriber on OneSignal. Refer our docs to learn how to add phone numbers to OneSignal. Example phone number: +1999999999 Limit of 2,000 entries per REST API call
+	IncludePhoneNumbers []string `json:"include_phone_numbers,omitempty"`
+	// Channel: SMS Phone Number used to send SMS. Should be a registered Twilio phone number in E.164 format.
+	SmsFrom string `json:"sms_from,omitempty"`
+	// Channel: SMS URLs for the media files to be attached to the SMS content. Limit: 10 media urls with a total max. size of 5MBs.
+	SmsMediaUrls []string `json:"sms_media_urls,omitempty"`
 }
 
 // NotificationCreateResponse wraps the standard http.Response for the
